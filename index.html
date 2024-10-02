@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Enrollment Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Student Enrollment Form</h2>
+        <form id="studentForm" method="post">
+            <div class="form-group">
+                <label for="shipmentId">Shipment ID:</label>
+                <input type="text" class="form-control" name="shipmentId" id="shipmentId" placeholder="Enter Shipment ID" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" class="form-control" name="description" id="description" placeholder="Enter Description" required>
+            </div>
+            <div class="form-group">
+                <label for="source">Source:</label>
+                <input type="text" class="form-control" name="source" id="source" placeholder="Enter Source" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" class="form-control" name="destination" id="destination" placeholder="Enter Destination" required>
+            </div>
+            <div class="form-group">
+                <label for="shippingDate">Shipping Date:</label>
+                <input type="date" class="form-control" name="shippingDate" id="shippingDate" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="expectedDeliveryDate">Expected Delivery Date:</label>
+                <input type="date" class="form-control" name="expectedDeliveryDate" id="expectedDeliveryDate" required>
+            </div>
+            <input type="button" class="btn btn-primary" id="save" value="Save" onclick="saveShipment();">
+            <input type="button" class="btn btn-warning" id="update" value="Update" onclick="updateShipment();" disabled>
+            <input type="button" class="btn btn-secondary" id="reset" value="Reset" onclick="resetForm();">
+        </form>
+    </div>
+    <script src="index.js"></script> 
+</body>
+</html>
